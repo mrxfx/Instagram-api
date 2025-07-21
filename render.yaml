@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: instagram-profile-api
+    name: insta-profile-api
     env: python
-    buildCommand: ""
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
